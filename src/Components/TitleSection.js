@@ -1,10 +1,12 @@
-import bg from '../images/9.jpg';
 import styled from 'styled-components';
+import bg from '../images/9.jpg';
+import logo from '../images/lbl-logo.png';
 
 const TitleSection = () => {
     return (
         <Wrapper>
             <span>
+                <img src={logo} alt="logo" draggable="false" />
                 <h1>Little Bright Lights</h1>
             </span>
         </Wrapper>
@@ -13,16 +15,19 @@ const TitleSection = () => {
 
 const Wrapper = styled.div`
     width: 100%;
+    max-width: 2000px;
+    margin: auto;
     height: calc(50dvh - 100px);
     min-height: 600px;
     background-image: url(${bg});
     background-size: cover;
     background-position: center;
     background-color: #efeff0;
-
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 2rem;
     align-items: center;
     font-family: 'work_sans';
     user-select: none;
@@ -34,9 +39,9 @@ const Wrapper = styled.div`
     mask: var(--mask);
 
     span {
-        max-width: 650px;
+        max-width: 750px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         background-color: #ade1d4b3;
@@ -55,6 +60,10 @@ const Wrapper = styled.div`
         font-size: clamp(1rem, -0.875rem + 5.333vw, 1.5rem);
         text-align: center;
         width: 80%;
+    }
+
+    img {
+        height: 90px;
     }
 `;
 
