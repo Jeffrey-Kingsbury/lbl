@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+        'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@font-face {
+    font-family: 'work_sans';
+    src: local('work_sans'), url(./fonts/WorkSans-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'indie_flower';
+    src: local('indie_flower'), url(./fonts/IndieFlower-Regular.ttf) format('truetype');
+}
