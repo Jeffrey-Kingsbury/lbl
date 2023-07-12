@@ -14,7 +14,7 @@ const Header = () => {
                     <li>About Us</li>
                     <li>Our team</li>
                     <li>Contact us</li>
-                    <li className='book'>Book an appointment</li>
+                    <li className='book'>Book an<br/>appointment</li>
                 </ul>
             </span>
         </Wrapper>
@@ -27,7 +27,6 @@ const Wrapper = styled.div`
     background-color: #ade1d4;
     font-family: 'work_sans';
     font-size: 30px;
-    color: white;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -35,8 +34,9 @@ const Wrapper = styled.div`
     box-sizing: border-box;
     overflow: hidden;
     user-select: none;
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.4);
     z-index: 1000;
+    position: fixed;
 
     span{
         width: 50%;
@@ -57,7 +57,7 @@ const Wrapper = styled.div`
     li{
         cursor: pointer;
         text-align: center;
-        font-size: clamp(1rem, -0.875rem + 2.333vw, 2rem);
+        font-size: clamp(1rem, -0.875rem + 2.333vw, 1.5rem);
         font-weight: 500;
         color: white;
         transition: all 0.2s ease-in-out;
