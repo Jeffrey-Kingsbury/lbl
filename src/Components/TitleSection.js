@@ -13,6 +13,7 @@ const TitleSection = ()=>{
 const Wrapper = styled.div`
 width: 100%;
 height: calc(50dvh - 100px);
+min-height: 600px;
 background-image: url(${bg});
 background-size: cover;
 background-position: center;
@@ -24,8 +25,7 @@ font-family: 'work_sans';
 user-select: none;
 
 span{
-    min-width: 600px;
-    max-width: 60%;
+    max-width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,14 +36,14 @@ span{
 }
 
 h1{
-    font-size: 80px;
+    font-size: clamp(2.5rem, -0.875rem + 8.333vw, 5rem);
     text-align: center;
     margin: 1rem 0 0 0;
     font-family: 'indie_flower';
 }
 
 p{
-    font-size: 25px;
+    font-size: clamp(1rem, -0.875rem + 5.333vw, 1.5rem);
     text-align: center;
     width: 80%;
 }

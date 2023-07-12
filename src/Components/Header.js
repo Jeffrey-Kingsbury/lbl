@@ -14,6 +14,7 @@ const Header = () => {
                     <li>About Us</li>
                     <li>Our team</li>
                     <li>Contact us</li>
+                    <li className='book'>Book an appointment</li>
                 </ul>
             </span>
         </Wrapper>
@@ -55,7 +56,8 @@ const Wrapper = styled.div`
 
     li{
         cursor: pointer;
-        font-size: 25px;
+        text-align: center;
+        font-size: clamp(1rem, -0.875rem + 2.333vw, 2rem);
         font-weight: 500;
         color: white;
         transition: all 0.2s ease-in-out;
@@ -68,7 +70,20 @@ const Wrapper = styled.div`
             color: white;
             transform: scale(0.98);
         }
+        
     }
+
+    .book{
+    box-sizing: border-box;
+    padding: .24rem;
+    border-radius: 10px;
+    outline: 4px solid white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 5px 5px;
+    &:hover{
+            text-decoration: none;
+        }
+    }
+    
 `;
 
 export default Header;
