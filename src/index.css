@@ -19,3 +19,6 @@ code {
     font-family: 'indie_flower';
     src: local('indie_flower'), url(./fonts/IndieFlower-Regular.ttf) format('truetype');
 }
+*{
+scroll-behavior: smooth;
+}

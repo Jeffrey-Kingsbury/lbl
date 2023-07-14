@@ -4,13 +4,16 @@ import logo from '../images/lbl-logo.png';
 const Header = ({ lang, setLang }) => {
     return (
         <Wrapper>
-
             <span>
                 <ul>
                     {lang === 'en' && (
                         <>
-                            <li>Services</li>
-                            <li>About Us</li>
+                            <a href="#services">
+                                <li>Services</li>
+                            </a>
+                            <a href="#about">
+                                <li>About Us</li>
+                            </a>
                             <li>Our team</li>
                             <li>Contact us</li>
                             <li className="book">
@@ -23,8 +26,13 @@ const Header = ({ lang, setLang }) => {
 
                     {lang === 'fr' && (
                         <>
-                            <li>Services</li>
-                            <li>À Propos de Nous</li>
+                            <a href="#services">
+                                {' '}
+                                <li>Services</li>
+                            </a>
+                            <a href="#about">
+                                <li>À Propos de Nous</li>
+                            </a>
                             <li>Notre équipe</li>
                             <li>Contactez-nous</li>
                             <li className="book">
@@ -35,7 +43,7 @@ const Header = ({ lang, setLang }) => {
                         </>
                     )}
                     <li
-                        style={{textTransform: 'uppercase'}}
+                        style={{ textTransform: 'uppercase' }}
                         onClick={() => {
                             lang === 'en' ? setLang('fr') : setLang('en');
                         }}
@@ -96,6 +104,10 @@ const Wrapper = styled.div`
             color: white;
             transform: scale(0.98);
         }
+    }
+
+    a {
+        text-decoration: none;
     }
 
     .book {

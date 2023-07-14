@@ -11,7 +11,7 @@ const Services = ({ lang }) => {
     const [socialDialog, setSocialDialog] = useState(false);
 
     return (
-        <Wrapper>
+        <Wrapper id='services'>
             {lang === 'en' && (
                 <>
                     <h1>Services</h1>

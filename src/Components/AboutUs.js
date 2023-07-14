@@ -2,7 +2,7 @@ import { styled } from 'styled-components';
 
 const AboutUs = ({ lang }) => {
     return (
-        <Wrapper>
+        <Wrapper id='about'>
             {lang === 'en' && (
                 <>
                     <h1>About us</h1>

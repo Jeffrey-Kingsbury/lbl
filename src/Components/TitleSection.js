@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bg from '../images/9.jpg';
+import bg from '../images/aba_upscale.jpg';
 import logo from '../images/lbl-logo.png';
 
 const TitleSection = () => {
@@ -17,7 +17,7 @@ const Wrapper = styled.div`
     width: 100%;
     max-width: 2000px;
     margin: auto;
-    height: calc(50dvh - 100px);
+    height: calc(100dvh - 100px);
     min-height: 600px;
     background-image: url(${bg});
     background-size: cover;

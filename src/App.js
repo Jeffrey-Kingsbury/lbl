@@ -19,5 +19,7 @@ function App() {
     );
 }
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+scroll-behavior: smooth;
+`;
 export default App;
